@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("api/url")
 @AllArgsConstructor
@@ -17,7 +19,7 @@ public class UrlShortnerController {
     public ResponseEntity<?> shorten(@RequestBody UrlRequest url) {
         String shortCode = urlShortnerService.shortUrl(url.getOriginalUrl());
         String shortUrl = "http://localhost:8080/api/url/" + shortCode;
-        return ResponseEntity.ok().body(shortUrl);
+        return ResponseEntity.ok().body(Map.of("shortUrl", shortUrl));
     }
 
     @GetMapping("/{shortCode}")

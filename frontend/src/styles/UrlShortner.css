@@ -1,0 +1,43 @@
+.url-shortener-container {
+  margin: 100px auto 0 auto;
+  padding: 32px;
+  max-width: 450px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px #0002;
+  text-align: center;
+}
+
+.url-shortener-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.url-shortener-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.url-shortener-form button {
+  padding: 10px 18px;
+  background: #0058b0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.url-shortener-form button:hover {
+  background: #004080;
+}
+
+.url-result {
+  margin-top: 24px;
+  font-size: 16px;
+}
