@@ -50,16 +50,23 @@ This project demonstrates how caching can drastically improve response time for 
 {
   "originalUrl": "https://www.example.com"
 }
-//Response
+```
+**Response Example:**
+```json
 {
   "shortUrl": "http://localhost:8080/abc123",
   "shortCode": "abc123",
   "originalUrl": "https://www.example.com"
 }
-From MongoDB: https://www.google.com | Time: 186 ms
+```
+From MongoDB: https://www.google.com | Time: 186 ms  
 ⚡ From Redis: https://www.google.com | Time: 3 ms
 
+---
 
+## 📁 Project Structure
+
+```text
 url-shortener/
 │
 ├── src/
@@ -78,3 +85,4 @@ url-shortener/
 ├── .gitignore
 ├── pom.xml / build.gradle
 └── README.md
+```
